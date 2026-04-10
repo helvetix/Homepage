@@ -2,12 +2,12 @@ services:
   homepage:
     image: ghcr.io/gethomepage/homepage:latest
     container_name: homepage
+    restart: unless-stopped
     ports:
-      - 3000:3000
+      - "3000:3000"
     volumes:
-      - /path/to/config:/app/config # Make sure your local config directory exists
-      - /var/run/docker.sock:/var/run/docker.sock:ro # (optional) For docker integrations, see alternative methods
+      - ./config:/app/config
+      - /var/run/docker.sock:/var/run/docker.sock:ro   # optional, for Docker widgets later
     environment:
-      HOMEPAGE_ALLOWED_HOSTS: gethomepage.dev # required, may need port. See gethomepage.dev/installation/#homepage_allowed_hosts
-      PUID: $PUID
-      PGID: $PGID
+      TZ: America/Denver                    # ← Change this to your timezone (e.g. America/New_York, Europe/London)
+      HOMEPAGE_ALLOWED_HOSTS: "*"           # Temporary: allows access from any computer on your network
