@@ -2,17 +2,40 @@
 # For configuration options and examples, please see:
 # https://gethomepage.dev/configs/services/
 
-- My First Group:
-    - My First Service:
-        href: http://localhost/
-        description: Homepage is awesome
+- News:
+    - Patriots:
+        href: https://patriots.win/
+        description: Patriots.win
+    - Instapundit:
+        href: https://pjmedia.com/instapundit/
+        description: Instapundit
+    - Breibart:
+        href: https://breitbart.com/
+        description: Breibart
 
-- My Second Group:
-    - My Second Service:
-        href: http://localhost/
-        description: Homepage is the best
+- Home Automation:
+    - Home Assistant:
+        href: http://homeassistant.local:8123/
+        description: Home Assistant
+    - Ubiquity:
+        href: https://unifi.ui.com/
+        description: Ubiquity
 
-- My Third Group:
-    - My Third Service:
+- Shop:
+    - 3d Printers:
+        href: https://connect.prusa3d.com/printers/table?sortBy=state%2Cname
+        description: 3d Printers
+    - Printables:
+        href: https://www.printables.com/
+        description: Printables
+    - Thingiverse:
+        href: https://www.thingiverse.com/
+        description: Thingiverse
+    - Gridfinity:
+        href: https://gridfinity.perplexinglabs.com/
+        description: Gridfinity
+
+- My Fourth Group:
+    - My Fourth Service:
         href: http://localhost/
         description: Homepage is 😎

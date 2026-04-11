@@ -8,8 +8,10 @@ all:
 ${DESTINATION}:
 	mkdir -p ${DESTINATION}
 
-install: ${DESTINATION}
-	( cd ${DESTINATION} ; docker compose stop )
+stop:
+	( cd ${DESTINATION} ; docker compose down )
+
+install: stop ${DESTINATION}
 	sudo rm -rf ${DESTINATION}
 	cp -rp ${SOURCES}/. ${DESTINATION}
 	( cd ${DESTINATION} ; docker compose up -d )
