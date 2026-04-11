@@ -8,5 +8,5 @@
     disk: /
 
 - search:
-    provider: duckduckgo
+    provider: brave
     target: _blank
