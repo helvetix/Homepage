@@ -15,9 +15,11 @@
 
 - Home Automation:
     - Home Assistant:
+        icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/home-assistant.png
         href: http://homeassistant.local:8123/
         description: Home Assistant
     - Ubiquity:
+        icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/ubiquiti-unifi.png
         href: https://unifi.ui.com/
         description: Ubiquity
 
@@ -32,10 +34,14 @@
         href: https://www.thingiverse.com/
         description: Thingiverse
     - Gridfinity:
-        href: https://gridfinity.perplexinglabs.com/
-        description: Gridfinity
+        - Gridfinity:
+            href: https://gridfinity.perplexinglabs.com/
+            description: Gridfinity
+        - Gridfinity Labels:
+            href: https://gridfinitylabels.com/
+            description: Gridfinity Labels
 
-- My Fourth Group:
-    - My Fourth Service:
-        href: http://localhost/
-        description: Homepage is 😎
+- AI:
+    - Grok:
+        href: https://grok.com/
+        description: Grok Chat
