@@ -22,6 +22,10 @@
         icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/ubiquiti-unifi.png
         href: https://unifi.ui.com/
         description: Ubiquity
+    - Shopping:
+        - Amazon:
+            href: https://amazon.com
+            description: Amazon
 
 - Shop:
     - 3d Printers:
